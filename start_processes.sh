@@ -5,6 +5,18 @@
 #
 # License: MIT License
 
+# you can put export commands into the secrets file.
+# This should include
+# export ALEXA_CLIENT_ID = "xyz"
+# export ALEXA_CLIENT_SECRET = "123"
+# As specified here
+#https://developer.amazon.com/en-US/docs/alexa/smapi/get-access-token-smapi.html#configure-lwa-security-profile
+
+if [ -f ".secrets" ];
+then
+    . .secrets
+fi
+
 # run
 if [ "$WSERV_DEBUG" = "TRUE" ];
 then

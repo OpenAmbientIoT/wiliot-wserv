@@ -61,6 +61,44 @@ def db_get_pixel_name(assetId):
     return 'no name'
 
 
+# these are the wrapper functions for alexa notifications
+# https://developer.amazon.com/en-US/docs/alexa/alexa-smart-properties/asp-in-senior-living-notifications-api.html
+
+#
+# GET /v1/skills/{skillId}/stages/{stage}/manifest
+# Host: api.amazonalexa.com
+# Content-Type: application/json
+# Authorization: "Bearer {LWA Access Token}"
+
+notify_data = {
+    "recipients": [
+        {
+        "type": "Unit",
+        "id": "amzn1.alexa.unit.did.{unitId1}"
+        },
+    ],
+    "notification": {
+        "variants": [
+            {
+            "type": "DeviceNotification",
+            "content": {
+                "variants": [
+                    {
+                    "type": "SpokenText",
+                    "values": [
+                            {
+                            "locale": "en-US",
+                            "text": "Example notification text."
+                            }
+                        ]
+                    }
+                ]
+            }
+            }
+        ]
+    }
+}
+
 app = Flask(__name__)
 db_connect()
 CORS(app, support_credentials=True)
