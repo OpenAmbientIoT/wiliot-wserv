@@ -1,0 +1,25 @@
+FROM debian:stable-20230208
+
+RUN apt-get -y  update &&\
+    apt-get -y install build-essential &&\
+    apt-get -y install postgresql &&\
+    apt-get -y install postgresql-contrib &&\
+    apt-get -y install libpq-dev &&\
+    apt-get -y install libcurl4-openssl-dev &&\
+    apt-get -y install python3 &&\
+    apt-get -y install python3-pip &&\
+    apt-get -y install wget && \
+    apt-get -y install nodejs &&\
+    apt-get -y install npm
+
+ARG WSERV_DEBUG
+ENV WSERV_DEBUG=${WSERV_DEBUG}
+
+EXPOSE 5000
+EXPOSE 3000
+
+COPY . /wserv
+
+WORKDIR /wserv
+RUN python3 -m pip install -r requirements.txt
+CMD ./start_processes.sh
