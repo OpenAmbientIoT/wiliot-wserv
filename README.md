@@ -17,6 +17,8 @@ This can simulate Pixels moving across a definable geography. This is a screensh
 
 ![alt text](./images/pixel_gen_screenshot1.png "Pixel Gen Screenshot")
 
+This is a CLI script that runs the simulation and the setup data is defined in the four JSON files. The next step would be to wrap this application in a React UI and make it much easier to tinker with and run the simulation.
+
 
 ## Simulator Database
 
