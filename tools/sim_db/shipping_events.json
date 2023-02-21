@@ -1,0 +1,3 @@
+[
+    {"name":"ship once every minute","origin":"OAK", "destination":"PHX", "signal_strength_pct_min_max": [90,100], "time_start":10, "time_between_seconds_min_max":[30000,40000]}
+]

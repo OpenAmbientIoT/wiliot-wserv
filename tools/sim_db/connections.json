@@ -1,0 +1,7 @@
+[
+    {"id": "1", "name":"Oakland->Commerce", "from": "OAK", "to": "CCA", "distance": 450, "transitTimeHrsMinMax": [60,92]},
+    {"id": "2", "name":"Commerce->Oakland", "from": "CCA", "to": "OAK", "distance": 450, "transitTimeHrsMinMax": [80,112]},
+    {"id": "3", "name":"Commerce->OC", "from": "CCA", "to": "SNA", "distance": 60, "transitTimeHrsMinMax": [8,36]},
+    {"id": "4", "name":"OC->Phoenix", "from": "SNA", "to": "PHX", "distance": 700, "transitTimeHrsMinMax": [24,120]}
+
+]

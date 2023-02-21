@@ -1,0 +1,7 @@
+[
+    {"id": "SNA", "name":"Orange County, Ca", "location": "33.58897,-117.73657", "oddsConnecting": 75, "oddsDisconnecting":3, "lingerTimeHrsMinMax": [0.5,24],"telemetryTimeMinMax":[3,10]},
+    {"id": "CCA","name": "commerce, Ca", "location": "34.00355, -118.16001","oddsConnecting": 75, "oddsDisconnecting":3, "lingerTimeHrsMinMax": [0.2,24],"telemetryTimeMinMax":[3,15]},
+    {"id": "OAK","name": "Oakland, Ca", "location": "37.76561, -122.21615","oddsConnecting": 75, "oddsDisconnecting":3, "lingerTimeHrsMinMax": [3,8],"telemetryTimeMinMax":[3,30]},
+    {"id": "PHX","name": "Phoenix, Az", "location": "33.41180585655159, -112.03559768777227","oddsConnecting": 75, "oddsDisconnecting":3, "lingerTimeHrsMinMax": [0.5,24], "telemetryTimeMinMax": [1,5]}
+
+]
