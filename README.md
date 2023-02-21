@@ -72,6 +72,9 @@ options:
 
 WServ is the application that listens for Pixel messages from MQTT, passes them to the Flask app using a web service call and a UI to look at the last temperature of the Pixels that have sent messages.  The UI is a bare bones example that is a good starting point for a more complex application. It uses Docker to run the three components.
 
+![alt text](./images/wserv_screenshot1.png "Wserv Screenshot")
+
+
 ```
 docker build -t wserv1 -f Dockerfile_app .
 docker run -p 5000:5000 -p 3000:3000 --name wserv wserv1
